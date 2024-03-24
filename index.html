@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio - Eduardo Betti</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a onclick="cliqueiNoMenu()" class="hamburger-nav" alt="abrir menu de navegação"></a>
+            <a onclick="cliqueiNoFechar()" class="fechar-nav" alt="fechar menu de navegação"></a>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="navDiv">
+                <ul class="navList">
+                    <li><a href="#home" onclick="cliqueiNoFechar()">Home</a></li>
+                    <li><a href="#sobre" onclick="cliqueiNoFechar()">Sobre</a></li>
+                    <li><a href="#projetos" onclick="cliqueiNoFechar()">Projetos</a></li>
+                    <li><a href="#contato" onclick="cliqueiNoFechar()">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h2 class="titulo">Portfólio</h2>
+
+
+        <div class="links">
+            <a onclick="cliqueiNoMenuLinks()" class="hamburger-links" alt="abrir menu links"></a>
+            <a onclick="cliqueiNoFecharLinks()" class="fechar-links" alt="fechar menu links"></a>
+            <a class="links-item" href="./assets/CV-Eduardo-Betti.pdf" target="_blank"><img src="./assets/curriculo.png"
+                    alt="ver currículo"></a>
+            <a class="links-item" href="https://github.com/eduardobetti" target="_blank"><img
+                    src="./assets/logo-github.png" alt="link github"></a>
+            <a class="links-item" href="https://www.linkedin.com/in/eduardo-betti/" target="_blank"><img
+                    src="./assets/logo-linkedin.png" alt="link linkedin"></a>
+            <a class="links-item" href="https://wa.me/+5519994277047" target="_blank"><img
+                    src="./assets/logo-whatsapp.png" alt="link whatsapp"></a>
+        </div>
+
+        <div class="navLinks">
+            <a href="./assets/CV-Eduardo-Betti.pdf" onclick="cliqueiNoFecharLinks()" target="_blank"><img
+                    src="./assets/curriculo.png" alt="ver currículo"></a>
+            <a href="https://github.com/eduardobetti" onclick="cliqueiNoFecharLinks()" target="_blank"><img
+                    src="./assets/logo-github.png" alt="link github"></a>
+            <a href="https://www.linkedin.com/in/eduardo-betti/" onclick="cliqueiNoFecharLinks()" target="_blank"><img
+                    src="./assets/logo-linkedin.png" alt="link linkedin"></a>
+            <a href="https://wa.me/+5519994277047" onclick="cliqueiNoFecharLinks()" target="_blank"><img
+                    src="./assets/logo-whatsapp.png" alt="link whatsapp"></a>
+        </div>
+    </header>
+
+    <main id="home">
+        <div class="nome">
+            <h1>Eduardo <span>Betti</span></h1>
+            <br>
+            <h3>Desenvolvedor Front-end</h3>
+            <h3>Front-end Developer</h3>
+        </div>
+        <div class="tecnologias">
+            <div class="tec-icons">
+                <img onclick="html()" src="./assets/icon-html.png" alt="abrir html">
+                <img onclick="css()" src="./assets/icon-css.png" alt="abrir css">
+                <img onclick="js()" src="./assets/icon-js.png" alt="abrir javascript">
+            </div>
+            <div class="tec-text">
+                <p>Clique no ícone e saiba mais sobre as tecnologias</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="sobre" id="sobre">
+        <div class="foto-perfil">
+            <img src="./assets/foto-perfil.png" alt="foto de perfil Eduardo Betti">
+        </div>
+        <div class="sobre-mim">
+            <h2>Sobre mim</h2>
+            <p>Olá, meu nome é Eduardo. Sou Desenvolvedor Front-end, com conhecimentos nas tecnologias HTML, CSS e
+                JavaScript. Amo transformar linhas de código em sites agradáveis tanto ao olhar quanto ao interagir.
+                Confira abaixo alguns dos meus projetos!</p>
+        </div>
+    </section>
+
+    <div class="projetos" id="projetos">
+        <div class="subtitulo-projetos">
+            <h2>Principais Projetos</h2>
+        </div>
+
+        <div class="card-projetos">
+
+            <div class="card">
+                <img src="./assets/icon-mario.png" alt="ícone mario bros.">
+                <h5>Mario Bros.</h5>
+                <p>Site dos encanadores Mario e Luigi, aplicando conhecimentos em <b>HTML</b>, <b>CSS</b> e
+                    <b>JavaScript</b>, com
+                    <b>responsividade</b>.
+                </p>
+                <a href="https://github.com/eduardobetti/supermariobros" target="_blank">Ver Projeto</a>
+            </div>
+
+            <div class="card">
+                <img src="./assets/icon-conversor.png" alt="ícone conversor de moedas">
+                <h5>Conversor de Moedas</h5>
+                <p>Conversor de Moedas, aplicando conhecimentos em <b>HTML</b>, <b>CSS</b> e principalmente
+                    <b>JavaScript</b>, com
+                    <b>responsividade</b>.
+                </p>
+                <a href="https://github.com/eduardobetti/conversor-moeda" target="_blank">Ver Projeto</a>
+            </div>
+
+            <div class="card">
+                <img src="assets/icon-quest.png" alt="ícone questionário">
+                <h5>Questionário JavaScript</h5>
+                <p>Questionário sobre JavaScript, aplicando conhecimentos em <b>HTML</b>, <b>CSS</b> e principalmente
+                    <b>JavaScript</b>, além
+                    de prompt no <b>ChatGPT</b>
+                </p>
+                <a href="https://github.com/eduardobetti/nlw-expert" target="_blank">Ver Projeto</a>
+            </div>
+
+            <div class="card-extra">
+                <img src="./assets/icon-starbucks.png" alt="ícone Starbucks">
+                <h5>Starbucks</h5>
+                <p>Página com temática da famosa marca de cafés, aplicando conhecimentos em <b>HTML</b>, <b>CSS</b> e
+                    <b>JavaScript</b>, com
+                    <b>responsividade</b>.
+                </p>
+                <a href="https://github.com/eduardobetti/starbucks" target="_blank">Ver Projeto</a>
+            </div>
+
+            <div class="card-extra">
+                <img src="./assets/icon-futebol.png" alt="ícone bola de futebol">
+                <h5>FutDados</h5>
+                <p>Página de login e signup, aplicando conhecimentos em <b>HTML</b>, <b>CSS</b> e <b>JavaScript</b>, com
+                    <b>responsividade</b>.
+                </p>
+                <a href="https://github.com/eduardobetti/login-signup" target="_blank">Ver Projeto</a>
+            </div>
+
+            <div class="card-extra">
+                <img src="./assets/icon-dado.png" alt="ícone dado de 6 lados">
+                <h5>Random Number</h5>
+                <p>Sorteador de números, aplicando conhecimentos em <b>HTML</b>, <b>CSS</b> e principalmente <b>JavaScript</b>, com
+                    <b>responsividade</b>.
+                </p>
+                <a href="https://github.com/eduardobetti/random-number" target="_blank">Ver Projeto</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="contato">
+
+        <div class="botao-mais">
+            <a class="mais-projetos" href="https://github.com/eduardobetti?tab=repositories" target="_blank">Ver mais
+                projetos</a>
+        </div>
+
+        <div class="footer-links">
+            <a href=".//assets/CV-Eduardo-Betti.pdf" target="_blank"><img src="./assets/curriculo.png"
+                    alt="ver currículo"></a>
+            <a href="https://github.com/eduardobetti" target="_blank"><img src="./assets/logo-github.png"
+                    alt="link github"></a>
+            <a href="https://www.linkedin.com/in/eduardo-betti/" target="_blank"><img src="./assets/logo-linkedin.png"
+                    alt="link linkedin"></a>
+            <a href="https://wa.me/+5519994277047" target="_blank"><img src="./assets/logo-whatsapp.png"
+                    alt="link whatsapp"></a>
+        </div>
+
+        <div class="info">
+            <h5>Eduardo Betti - 2024</h5>
+            <p>e-mail: esbetti92@gmail.com</p>
+            <p>telefone: +5519994277047</p>
+        </div>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>

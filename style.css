@@ -1,0 +1,901 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    border: 3px solid #111;
+    border-style: double;
+    background: #e4e4e4;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    padding-inline: 30px;
+    border-left: none;
+    border-right: none;
+}
+
+nav,
+.titulo,
+.links {
+    width: 30%;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 5%;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.menu li {
+    background-image: -webkit-linear-gradient(180deg, #020024 0%, #3aaca5 0%, #6f3aac 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s;
+}
+
+.menu li:hover {
+    scale: 1.1;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 45px;
+    font-style: italic;
+    background-image: -webkit-linear-gradient(180deg, #020024 0%, #3aaca5 0%, #6f3aac 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5%;
+}
+
+.links img {
+    width: 30px;
+}
+
+main {
+    height: 100vh;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(360deg, #3aaca5 0%, #6f3aac 100%);
+    gap: 10px;
+}
+
+.nome,
+.tecnologias {
+    width: 40vw;
+    text-align: end;
+    color: #111;
+}
+
+.tecnologias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tecnologias p {
+    width: 300px;
+    height: 300px;
+    background: #e4e4e4;
+    padding: 20px;
+    border: 2px solid #111;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.tec-icons {
+    display: flex;
+    justify-content: space-around;
+    background: #e4e4e4;
+    padding: 5px;
+    border: 2px solid #111;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.tec-icons img {
+    width: 30px;
+    opacity: .8;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.tec-icons img:hover {
+    opacity: 1;
+}
+
+.tec-icons img:active {
+    opacity: 1;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+span {
+    text-shadow: #e4e4e4 4px 5px 10px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.sobre {
+    background: linear-gradient(180deg, #3aaca5 0%, #6f3aac 100%);
+    height: 100vh;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.foto-perfil,
+.sobre-mim {
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #111;
+}
+
+.foto-perfil img {
+    width: 250px;
+    border: 5px solid #e4e4e4;
+    border-style: inset;
+    border-radius: 10px;
+    background: url(./assets/bg-perfil.png);
+}
+
+.sobre-mim h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 45px;
+    font-style: italic;
+}
+
+.sobre-mim p {
+    text-align: justify;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.projetos {
+    background: linear-gradient(360deg, #3aaca5 0%, #6f3aac 100%);
+    height: 100vh;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetos h2 {
+    text-decoration: underline;
+    font-size: 45px;
+    font-style: italic;
+    padding-top: 5vh;
+    height: 20vh;
+    color: #111;
+}
+
+.card-projetos {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+    height: 50vh;
+}
+
+.card,
+.card-extra {
+    background: url(./assets/bg-card.png);
+    background-color: #e3944d;
+    background-position: top;
+    background-size: cover;
+    height: 365px;
+    width: 30vw;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid rgb(30, 62, 110);
+    padding: 0 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img,
+.card-extra img {
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.card h5,
+.card-extra h5 {
+    color: rgb(30, 38, 110);
+    font-size: 15px;
+    text-wrap: nowrap;
+}
+
+.card p,
+.card-extra p {
+    color: rgb(30, 62, 110);
+    font-size: 15px;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.card a,
+.card-extra a {
+    background-color: #08d3e27c;
+    color: rgb(30, 38, 110);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    text-decoration: none;
+    opacity: .5;
+}
+
+.card a:hover {
+    background-color: rgb(30, 38, 110);
+    border: 2px solid rgba(0, 192, 250, 0.514);
+    color: wheat;
+    opacity: .75;
+}
+
+.card a:active {
+    opacity: 1;
+}
+
+footer {
+    background: linear-gradient(180deg, #3aaca5 0%, #6f3aac 100%);
+    height: 50vh;
+    padding: 10vh 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mais-projetos {
+    background-color: #e4e4e4;
+    color: rgb(30, 38, 110);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.mais-projetos:hover {
+    background-color: rgb(30, 38, 110);
+    border: 2px solid rgba(0, 192, 250, 0.514);
+    color: #e4e4e4;
+}
+
+.footer-links {
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    display: none;
+}
+
+.footer-links a {
+    background-color: #e4e4e4;
+    color: rgb(30, 38, 110);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.footer-links a:hover {
+    box-shadow: goldenrod 4px 5px 5px;
+}
+
+.footer-links img {
+    width: 30px;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h5 {
+    font-size: 20px;
+}
+
+.info p {
+    margin-top: 10px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navDiv {
+    height: 40vh;
+    width: 100vw;
+    position: fixed;
+    background: #e4e4e4;
+    top: 10%;
+    left: -125%;
+    transition: left 1.5s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #111;
+    border-style: double;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.navList {
+    list-style: none;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 30px;
+    background-image: -webkit-linear-gradient(180deg, #020024 0%, #3aaca5 0%, #6f3aac 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navList a {
+    text-decoration: none;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid #111;
+    border-style: double;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    background: #e4e4e4;
+    top: 10%;
+    right: -125%;
+    transition: right 1.5s ease-in-out;
+    padding-inline: 50px;
+}
+
+.navLinks img {
+    width: 30px;
+}
+
+.card-extra {
+    display: none;
+}
+
+@media (max-width:1300px) {
+
+    .menu {
+        display: none;
+    }
+
+    .nav,
+    .links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .links-item {
+        display: none;
+    }
+
+    .hamburger-nav,
+    .hamburger-links {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url(./assets/botao-menu.png);
+        background-size: cover;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .fechar-nav {
+        width: 25px;
+        height: 25px;
+        background: url(./assets/botao-fechar.png);
+        background-size: cover;
+        position: relative;
+        z-index: 1000;
+        display: none;
+    }
+
+    .fechar-links {
+        width: 25px;
+        height: 25px;
+        background: url(./assets/botao-fechar.png);
+        background-size: cover;
+        position: relative;
+        display: none;
+    }
+
+    .tec-icons img {
+        opacity: 1;
+    }
+
+    .card a, .card-extra a {
+        opacity: 1;
+    }
+
+    footer {
+        padding: 5vh 10vw;
+        justify-content: space-evenly;
+    }
+
+    .footer-links {
+        display: flex;
+    }
+}
+
+@media (max-width:1050px) {
+    .card, .card-extra {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width:850px) {
+    .card, .card-extra {
+        padding: 0 30px;
+    }
+
+    .titulo,
+    .sobre-mim h2,
+    .projetos h2 {
+        font-size: 40px;
+    }
+
+    main {
+        gap: 20px;
+    }
+}
+
+@media (max-width:700px) {
+    header {
+        padding-inline: 15px;
+    }
+
+    .tec-icons,
+    .tecnologias p {
+        width: 270px;
+    }
+
+    .card,
+    .card-extra {
+        padding: 0 23px;
+    }
+
+    .card p, .card-extra p {
+        font-size: 14px;
+    }
+
+    .sobre {
+        gap: 20px;
+    }
+
+    .sobre-mim p {
+        font-size: 20px;
+    }
+
+    main {
+        gap: 40px;
+    }
+}
+
+@media (max-width:600px) {
+
+    .nav,
+    .links {
+        width: 15%;
+    }
+
+    .titulo {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .tec-icons,
+    .tecnologias p {
+        width: 220px;
+        font-size: 13px;
+    }
+
+    .foto-perfil img {
+        width: 200px;
+    }
+
+    .titulo,
+    .sobre-mim h2,
+    .projetos h2 {
+        font-size: 34px;
+    }
+
+    .sobre-mim p {
+        font-size: 16px;
+    }
+
+    .card,
+    .card-extra {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        height: 30vh;
+    }
+
+    .card-extra img, .card-extra img {
+        width: 50px;
+    }
+
+    .card h5, .card-extra h5 {
+        text-wrap: wrap;
+    }
+
+    .card p, .card-extra p {
+        display: none;
+    }
+
+    .card-projetos {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:500px) {
+
+    #home,
+    #sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .projetos {
+        height: 75vh;
+    }
+
+    .card-projetos {
+        gap: 0;
+    }
+
+    .card,
+    .card-extra {
+        height: 25vh;
+    }
+
+    .card h5,
+    .card-extra h5 {
+        font-size: 12px;
+    }
+
+    .footer-links {
+        gap: 20px;
+    }
+}
+
+@media (max-width:400px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    .titulo,
+    .sobre-mim h2,
+    .projetos h2 {
+        font-size: 26px;
+    }
+
+    .foto-perfil img {
+        width: 150px;
+    }
+
+    .sobre-mim p {
+        font-size: 13px;
+    }
+
+    .card a, .card-extra a {
+        text-wrap: nowrap;
+        font-size: 10px;
+        padding: 5px 20px;
+    }
+
+    footer {
+        height: 75vh;
+    }
+}
+
+@media (max-width:350px) and (orientation:portrait) {
+    .navList {
+        gap: 20px
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 8px;
+    }
+
+    .card img,
+    .card-extra img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .card h5,
+    .card-extra h5 {
+        font-size: 8px;
+    }
+
+    .card a, .card-extra a {
+        font-size: 6px;
+    }
+
+    .footer-links {
+        gap: 5px;
+    }
+
+    .footer-links img {
+        width: 20px;
+    }
+
+    .info p {
+        font-size: 15px;
+    }
+}
+
+@media (max-height:600px) and (orientation:portrait) {
+
+    .nome {
+        padding-top: 10vh;
+    }
+
+    .foto-perfil {
+        padding-top: 25vh;
+    }
+
+    .subtitulo-projetos {
+        padding-top: 20vh;
+    }
+
+    .botao-mais {
+        padding: 10vh 0;
+    }
+
+    footer {
+        padding-top: 25vh;
+    }
+
+    .info h5 {
+        margin: 10px 0px;
+    }
+
+    .navList {
+        gap: 10px;
+    }
+
+    .navList a {
+        font-size: 20px;
+    }
+
+    .hamburger-nav,
+    .hamburger-links {
+        width: 25px;
+        height: 25px;
+    }
+
+    .fechar-nav,
+    .fechar-links {
+        width: 20px;
+        height: 20px;
+    }
+
+    .tecnologias p {
+        height: 240px;
+    }
+}
+
+@media (max-height:600px) and (orientation:landscape) {
+    .navList {
+        font-size: 20px;
+        gap: 20px;
+    }
+
+    .sobre-mim p {
+        font-size: 21px;
+    }
+
+    .footer-links {
+        margin: 20px 0;
+    }
+}
+
+@media (max-height:450px) and (orientation:landscape) {
+
+    .titulo,
+    .sobre-mim h2,
+    .projetos h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .foto-perfil img {
+        width: 200px;
+    }
+
+    .sobre-mim p {
+        font-size: 18px;
+    }
+
+    .card, .card-extra {
+        height: 280px;
+    }
+
+    .card h5, .card-extra h5 {
+        text-wrap: wrap;
+        margin: 20px 0;
+    }
+
+    .card p, .card-extra p {
+        display: none;
+    }
+
+    footer {
+        height: 75vh;
+    }
+
+    .tec-icons,
+    .tecnologias p {
+        width: 250px;
+    }
+
+    .tecnologias p {
+        height: 250px;
+        font-size: 13px;
+    }
+
+    .navList,
+    .navDiv {
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-height:400px) and (orientation:landscape) {
+    h1 {
+        font-size: 52px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .titulo,
+    .sobre-mim h2,
+    .projetos h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        height: 100vh;
+    }
+}
+
+@media (max-height:350px) and (orientation:landscape) {
+
+    .hamburger-nav,
+    .hamburger-links {
+        width: 20px;
+        height: 20px;
+    }
+
+    .fechar-nav,
+    .fechar-links {
+        width: 15px;
+        height: 15px;
+    }
+
+    .titulo,
+    .sobre-mim h2,
+    .projetos h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .tec-icons img {
+        scale: .75;
+    }
+
+    .tecnologias p {
+        height: 200px;
+        font-size: 12px;
+    }
+
+    .foto-perfil img {
+        width: 125px;
+    }
+
+    .sobre-mim p {
+        font-size: 12px;
+    }
+
+    .card, .card-extra {
+        height: 200px;
+    }
+
+    .card h5, .card-extra h5 {
+        margin: 5px 0;
+    }
+
+    .card a, .card-extra a {
+        font-size: 10px;
+        padding: 5px 20px;
+    }
+}
